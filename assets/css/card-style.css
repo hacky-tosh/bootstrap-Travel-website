@@ -1,0 +1,231 @@
+#main-card-destination {
+    padding: 0;
+    margin: 0;
+    /* background-image: url("assets/img/cards-bg.png"); */
+    background-position: top center;
+    background-repeat: repeat;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wpb_wrapper {
+    position: relative;
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 20px;
+}
+
+.wpb_wrapper p {
+    font-family: cursive;
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.48px;
+    color: #36bca1;
+    margin-bottom: 10px;
+}
+
+.wpb_wrapper h3 {
+    font-family: cursive;
+    margin-top: 0px;
+    font-size: 32px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 32px;
+    letter-spacing: -0.8px;
+    color: #123a32;
+    display: block;
+    position: relative;
+}
+
+.wpb_wrapper h3:before {
+    content: url(../img/Vector.svg);
+    position: absolute;
+    left: 50%;
+    bottom: -40px;
+    transform: translateX(-50%);
+}
+
+
+/*================================================================*/
+
+.section-card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-areas: "image" "text" "stats";
+    border-radius: 18px;
+    background: white;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    font-family: roboto;
+    text-align: center;
+    transition: 0.5s ease;
+    cursor: pointer;
+    margin: 30px;
+    overflow: hidden;
+}
+
+.card-image {
+    height: 210px;
+    transition: all 0.35s;
+}
+
+.card-image:hover {
+    transform: scale(1.10);
+    transition: all 0.35s;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    transition: all 0.35s;
+}
+
+.card-text {
+    grid-area: text;
+    margin: 25px;
+}
+
+.card-text .date {
+    color: #DF5334;
+    font-size: 13px;
+}
+
+.card-text p {
+    color: grey;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.card-text h2 {
+    margin-top: 0px;
+    font-size: 28px;
+}
+
+.card-stats {
+    grid-area: stats;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: #DF5334;
+}
+
+.card-stats .stat {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+
+.card-stats .border {
+    border-left: 1px solid rgb(172, 26, 87);
+    border-right: 1px solid rgb(172, 26, 87);
+}
+
+.card-stats .value {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.card-stats .value sup {
+    font-size: 12px;
+}
+
+.card-stats .type {
+    font-size: 11px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+
+/*.card:hover { transform: scale(1.10); box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6); }*/
+
+.text-content {
+    position: relative;
+    text-align: center;
+    margin-bottom: -110px;
+    margin-top: 25px;
+}
+
+
+/*==============================================================*/
+
+.image-card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-card {
+    display: grid;
+    grid-template-columns: 300px;
+    border-radius: 18px;
+    font-family: roboto;
+    text-align: center;
+    transition: 0.5s ease;
+    cursor: pointer;
+    margin: 30px;
+}
+
+.img-card-image {
+    height: 320px;
+    transition: all 0.35s;
+}
+
+.img-card-image:hover {
+    transform: scale(1.10);
+    transition: all 0.35s;
+}
+
+.img-card-image img {
+    width: 100%;
+    height: 100%;
+    transition: all 0.35s;
+    position: relative;
+    border-radius: 5px;
+}
+
+.img-card-text {
+    text-align: center;
+}
+
+.img-card-text h4 {
+    margin: 24px 0px 0px 0px !important;
+    font-size: 20px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 32px;
+    letter-spacing: 0.48px;
+    color: var(--main-color, #123a32);
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    transition: all 0.35s;
+}
+
+#main-section {
+    margin-top: -195px;
+}
